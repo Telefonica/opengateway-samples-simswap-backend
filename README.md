@@ -90,3 +90,13 @@ Follow the steps below to run the web server version of the sample app. The serv
 cd server
 python simswap-server.py
 ```
+
+You can also test your server with the following `curl` commands changing the phone number (including country code with + prefix) and the number of hours as needed:
+
+```Shell
+curl --location 'http://localhost:3000/check/+34600000000/500'
+```
+
+```Shell
+curl --location 'http://localhost:3000/retrieve_date/+34600000000'
+```
